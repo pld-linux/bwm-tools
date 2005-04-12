@@ -8,9 +8,14 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/bwm-tools/bwm_tools-%{version}.tar.bz2
 # Source0-md5:	67d2303ec9d34fd319a94f96043ea2d3
 URL:		http://bwm-tools.pr.linuxrulz.org/
+BuildRequires:	autoconf
+BuildRequires:	cgilibc-devel
+BuildRequires:	gd-devel
 BuildRequires:	glib2-devel >= 2.2.0
 BuildRequires:	libxml2-devel >= 2.5.0
+BuildRequires:	ncurses-ext-devel
 BuildRequires:	pkgconfig
+BuildRequires:	rrdtool-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,8 +39,10 @@ czasie rzeczywistym.
 %setup -q -n bwm_tools-%{version}
 
 %build
+%{__autoconf}
 %configure
-%{__make}
+%{__make} \
+    CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -48,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
+%doc AUTHORS ChangeLog NEWS README TODO
 
 # if _sysconfdir != /etc:
 #%%dir %{_sysconfdir}
