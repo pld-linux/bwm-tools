@@ -62,8 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 #%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
 
 %attr(755,root,root) %{_bindir}/*
-
-#%{_datadir}/%{name}
+%attr(755,root,root) %{_libdir}/libbwm.a
+%attr(755,root,root) %{_libdir}/libbwm.la
 
 # initscript and its config
 #%attr(754,root,root) /etc/rc.d/init.d/%{name}
