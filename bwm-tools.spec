@@ -7,7 +7,9 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/bwm-tools/bwm_tools-%{version}.tar.bz2
 # Source0-md5:	67d2303ec9d34fd319a94f96043ea2d3
 URL:		http://bwm-tools.pr.linuxrulz.org/
-#BuildRequires:	automake
+BuildRequires:	libxml2-devel >= 2.5.0
+BuildRequires:	glib2-devel >= 2.2.0
+BuildRequires:	pkg-config
 #BuildRequires:	-
 #Requires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
