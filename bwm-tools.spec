@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/bwm-tools/bwm_tools-%{version}.tar.bz2
 URL:		http://bwm-tools.pr.linuxrulz.org/
 BuildRequires:	libxml2-devel >= 2.5.0
 BuildRequires:	glib2-devel >= 2.2.0
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig
 #BuildRequires:	-
 #Requires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
