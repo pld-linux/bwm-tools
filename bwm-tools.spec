@@ -50,20 +50,22 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_sysconfdir}/bwm_tools
+install doc/example.xml $RPM_BUILD_ROOT%{_sysconfdir}/bwm_tools/
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
+%{_infodir}/bwmtools.info*
 
-# if _sysconfdir != /etc:
-#%%dir %{_sysconfdir}
-#%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
+%attr(750,root,root) %dir %{_sysconfdir}/bwm_tools/
+%attr(640,root,root) %{_sysconfdir}/bwm_tools/example.xml
 
 %attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/libbwm.a
-%attr(755,root,root) %{_libdir}/libbwm.la
+%attr(755,root,root) %{_libdir}/libbwm*
 
 # initscript and its config
 #%attr(754,root,root) /etc/rc.d/init.d/%{name}
