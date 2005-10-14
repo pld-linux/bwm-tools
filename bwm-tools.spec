@@ -2,7 +2,7 @@ Summary:	Bandwidth Management Tools
 Summary(pl):	Narzêdzia do zarz±dzania pasmem
 Name:		bwm-tools
 Version:	0.2.1
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/bwm-tools/bwm_tools-%{version}.tar.bz2
@@ -15,7 +15,7 @@ BuildRequires:	glib2-devel >= 2.2.0
 BuildRequires:	libxml2-devel >= 2.5.0
 BuildRequires:	ncurses-ext-devel
 BuildRequires:	pkgconfig
-BuildRequires:	rrdtool-devel
+BuildRequires:	rrdtool-devel >= 1.2.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
