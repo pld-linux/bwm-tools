@@ -42,7 +42,7 @@ czasie rzeczywistym.
 %{__autoconf}
 %configure
 %{__make} \
-    CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
+    CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
