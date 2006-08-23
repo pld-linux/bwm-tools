@@ -28,7 +28,7 @@ real-time monitoring front-end.
 
 %description -l pl
 Bandwidth Management Tools to kompletne rozwi±zanie zarz±dzania pasmem
-dla Linuksa, które mo¿e byæ u¿ywane¿ do zapór sieciowych, wykresów
+dla Linuksa, które mo¿e byæ u¿ywane do zapór sieciowych, wykresów
 ruchu oraz ograniczania pasma. Nie jest oparte na ¿adnym dotychczas
 dostêpnym oprogramowaniu do zarz±dzania pasmem i obs³uguje kolejki
 pakietów, strumienie, z³o¿one hierarchie przep³ywu ruchu, grupy
