@@ -1,5 +1,5 @@
 Summary:	Bandwidth Management Tools
-Summary(pl.UTF-8):   Narzędzia do zarządzania pasmem
+Summary(pl.UTF-8):	Narzędzia do zarządzania pasmem
 Name:		bwm-tools
 Version:	0.2.1
 Release:	0.2
