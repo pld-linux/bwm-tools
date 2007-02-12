@@ -1,5 +1,5 @@
 Summary:	Bandwidth Management Tools
-Summary(pl):	Narzêdzia do zarz±dzania pasmem
+Summary(pl.UTF-8):   NarzÄ™dzia do zarzÄ…dzania pasmem
 Name:		bwm-tools
 Version:	0.2.1
 Release:	0.2
@@ -26,13 +26,13 @@ management software and supports packet queues, bursting, complex
 traffic flow hierarchies, flow groups, traffic logging, and a simple
 real-time monitoring front-end.
 
-%description -l pl
-Bandwidth Management Tools to kompletne rozwi±zanie zarz±dzania pasmem
-dla Linuksa, które mo¿e byæ u¿ywane do zapór sieciowych, wykresów
-ruchu oraz ograniczania pasma. Nie jest oparte na ¿adnym dotychczas
-dostêpnym oprogramowaniu do zarz±dzania pasmem i obs³uguje kolejki
-pakietów, strumienie, z³o¿one hierarchie przep³ywu ruchu, grupy
-przep³ywów, logowanie ruchu oraz prosty frontend do monitorowania w
+%description -l pl.UTF-8
+Bandwidth Management Tools to kompletne rozwiÄ…zanie zarzÄ…dzania pasmem
+dla Linuksa, ktÃ³re moÅ¼e byÄ‡ uÅ¼ywane do zapÃ³r sieciowych, wykresÃ³w
+ruchu oraz ograniczania pasma. Nie jest oparte na Å¼adnym dotychczas
+dostÄ™pnym oprogramowaniu do zarzÄ…dzania pasmem i obsÅ‚uguje kolejki
+pakietÃ³w, strumienie, zÅ‚oÅ¼one hierarchie przepÅ‚ywu ruchu, grupy
+przepÅ‚ywÃ³w, logowanie ruchu oraz prosty frontend do monitorowania w
 czasie rzeczywistym.
 
 %prep
